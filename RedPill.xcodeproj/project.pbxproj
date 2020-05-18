@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A0D9E324720E8700454FE2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F75E1114649E8E00BC0085 /* OpenGL.framework */; };
 		7E939FE11C86F6410070BDD5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E939FE01C86F6410070BDD5 /* Contents.json */; };
 		7E939FE41C884ADF0070BDD5 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E939FE21C884ADF0070BDD5 /* thumbnail@2x.png */; };
 		7E939FE51C884ADF0070BDD5 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E939FE31C884ADF0070BDD5 /* thumbnail.png */; };
@@ -29,17 +30,21 @@
 		C0F75E0414649DBA00BC0085 /* MatrixView.h in Headers */ = {isa = PBXBuildFile; fileRef = C0F75DF614649DBA00BC0085 /* MatrixView.h */; };
 		C0F75E0514649DBA00BC0085 /* MatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F75DF714649DBA00BC0085 /* MatrixView.m */; };
 		C0F75E0B14649E1C00BC0085 /* Matrix.nib in Resources */ = {isa = PBXBuildFile; fileRef = C0F75E0914649E1C00BC0085 /* Matrix.nib */; };
-		C0F75E1214649E8E00BC0085 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F75E1114649E8E00BC0085 /* OpenGL.framework */; };
 		C0F75E1C1464A00100BC0085 /* Glyphs.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F75E1B1464A00100BC0085 /* Glyphs.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = /System/Library/Frameworks/ScreenSaver.framework; sourceTree = "<absolute>"; };
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCFA80370C50100C91783 /* RedPill_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPill_Prefix.pch; sourceTree = "<group>"; };
+		67A0D9D924720ACA00454FE2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = ja; path = ja.lproj/Matrix.nib; sourceTree = "<group>"; };
+		67A0D9DA24720ACE00454FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/Matrix.nib; sourceTree = "<group>"; };
+		67A0D9DB24720AD200454FE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67A0D9DD24720D0D00454FE2 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		67A0D9DF24720D2900454FE2 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		67A0D9E124720D3100454FE2 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		7E5EAEE61DAD1D7E00F0A164 /* de */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = de; path = de.lproj/Matrix.nib; sourceTree = "<group>"; };
 		7E939FE01C86F6410070BDD5 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/Contents.json; sourceTree = SOURCE_ROOT; };
 		7E939FE21C884ADF0070BDD5 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -60,8 +65,6 @@
 		C0F75DF514649DBA00BC0085 /* MatrixTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTexture.m; sourceTree = "<group>"; };
 		C0F75DF614649DBA00BC0085 /* MatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixView.h; sourceTree = "<group>"; };
 		C0F75DF714649DBA00BC0085 /* MatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixView.m; sourceTree = "<group>"; };
-		C0F75E0A14649E1C00BC0085 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Matrix.nib; sourceTree = "<group>"; };
-		C0F75E0E14649E5500BC0085 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/Matrix.nib; sourceTree = "<group>"; };
 		C0F75E1114649E8E00BC0085 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		C0F75E1B1464A00100BC0085 /* Glyphs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Glyphs.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +76,7 @@
 			files = (
 				8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */,
 				8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */,
-				C0F75E1214649E8E00BC0085 /* OpenGL.framework in Frameworks */,
+				67A0D9E324720E8700454FE2 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,7 @@
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
 				19C28FB8FE9D52D311CA2CBB /* Products */,
+				67A0D9DC24720D0D00454FE2 /* Frameworks */,
 			);
 			indentWidth = 2;
 			name = RedPill;
@@ -173,6 +177,16 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		67A0D9DC24720D0D00454FE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67A0D9E124720D3100454FE2 /* MetalKit.framework */,
+				67A0D9DF24720D2900454FE2 /* MetalPerformanceShaders.framework */,
+				67A0D9DD24720D0D00454FE2 /* Metal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -221,23 +235,18 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
-				TargetAttributes = {
-					8D255AC50486D3F9007BF209 = {
-						DevelopmentTeam = 65F889U2GY;
-					};
-				};
+				LastUpgradeCheck = 1140;
 			};
 			buildConfigurationList = EF7AD73108BB986600CE4634 /* Build configuration list for PBXProject "RedPill" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
 				de,
+				fr,
+				ja,
+				Base,
+				en,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* RedPill */;
 			projectDirPath = "";
@@ -294,7 +303,7 @@
 		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C167EFE841241C02AAC07 /* English */,
+				67A0D9DB24720AD200454FE2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -302,9 +311,9 @@
 		C0F75E0914649E1C00BC0085 /* Matrix.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C0F75E0A14649E1C00BC0085 /* English */,
-				C0F75E0E14649E5500BC0085 /* Japanese */,
 				7E5EAEE61DAD1D7E00F0A164 /* de */,
+				67A0D9D924720ACA00454FE2 /* ja */,
+				67A0D9DA24720ACE00454FE2 /* Base */,
 			);
 			name = Matrix.nib;
 			sourceTree = "<group>";
@@ -316,12 +325,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2.4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9X4CD4R27R;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -329,6 +339,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 2.4;
 				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rdsroot.redpill;
 				PRODUCT_NAME = RedPill;
@@ -343,17 +354,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2.4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_ENABLE_OBJC_GC = unsupported;
+				DEVELOPMENT_TEAM = 9X4CD4R27R;
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RedPill_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 2.4;
 				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rdsroot.redpill;
 				PRODUCT_NAME = RedPill;
@@ -370,23 +383,30 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Rolf Rother (65F889U2GY)";
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_ENABLE_OBJC_GC = supported;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -410,23 +430,30 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Rolf Rother (65F889U2GY)";
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_ENABLE_OBJC_GC = supported;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
