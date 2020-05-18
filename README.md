@@ -1,9 +1,13 @@
 This is Red Pill, a 3D OpenGL "Matrix" screensaver for Mac OS X.
 Copyright © 2002-2012 mathew <meta@pobox.com>.
 Copyright © 2016 - px3 <rr@rdsroot.net>.
+Copyright © 2020 - Jason Short 
 
-This Fork is based on the orginal Screensaver of mathew, but adopted to XCode 8 and the newest MacOSX 10.12.
-Latest builds and downloads can be found at: https://wwm4u.de/redpill/
+Yes, this is a fork of a fork.  :)
+I updated to use current XCode and Mac OS formats (OS 10.15 and XCode 11.4).  Mostly I wanted this to run on my current machine, which the original fork could not.
+
+Latest builds and downloads can be found at: https://github.com/jasonshortphd/RedPill2/
+
 
 
 Red Pill is free software; you can redistribute it and/or modify
